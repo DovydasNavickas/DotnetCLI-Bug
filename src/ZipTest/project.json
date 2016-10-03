@@ -16,7 +16,16 @@
     "dotnet-test-xunit": "2.2.0-preview2-build1029"
   },
   "frameworks": {
-    "net46": {}
+    "net46": {},
+    "netcoreapp1.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.1"
+        }
+      },
+      "imports": "dnxcore50"
+    }
   },
   "tools": {
     "Microsoft.AspNetCore.Server.IISIntegration.Tools": "1.0.0-preview2-final"
